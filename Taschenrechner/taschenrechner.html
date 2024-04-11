@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <!-- Verknüpfung mit style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <!-- Parameter zur Übergabe an PHP Script - Request erfolgt über POST = HTTP-Request -->
+    <form action="rechnen.php" method="POST">
+       <b>Einfacher Taschenrechner</b></br><br>
+       <!-- Eingabefeld für die erste Zahl mit Option: required -->
+         <input name="zahl1" placeholder="Zahl 1" required>
+       <!-- Mit select Dropdown zur Auswahl der Rechenoperatoren -->
+       <select type="text" name="operator">
+            <option value="+" selected>+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+       </select>
+         <!-- Eingabefeld für die zweite Zahl mit Option: required -->
+            <input name="zahl2" placeholder="Zahl 2" required><br>
+            <br>
+         <!-- Button zur Berechnung -->
+            <input type="submit" name="submit" value="Berechnen">
+    </form>
+
+</body>
+</html>

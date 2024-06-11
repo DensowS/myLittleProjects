@@ -42,8 +42,8 @@ class PDFToolsApp:
         if self.file_paths:
             output_pdf_path = filedialog.asksaveasfilename(defaultextension=".pdf", filetypes=[("PDF files", "*.pdf")])
             if output_pdf_path:
-                self.converter.convert_and_merge_docx_to_pdf(self.file_paths, output_pdf_path)
-                messagebox.showinfo("Erfolg", "Dateien wurden erfolgreich zu PDF konvertiert und zusammengeführt.")
+                self.converter.convert_docx_to_pdf(self.file_paths, output_pdf_path)
+                messagebox.showinfo("Erfolg", "Dateien wurden erfolgreich zu PDF konvertiert.")
         else:
             messagebox.showerror("Fehler", "Bitte wählen Sie zuerst DOCX Dateien aus.")
 

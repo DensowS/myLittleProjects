@@ -4,7 +4,7 @@ import tempfile
 import os
 
 class PDFConverter:
-    def convert_and_merge_docx_to_pdf(self, docx_paths, output_pdf_path):
+    def convert_docx_to_pdf(self, docx_paths, output_pdf_path):
         temp_dir = tempfile.mkdtemp()
         pdf_paths = []
         for docx_path in docx_paths:

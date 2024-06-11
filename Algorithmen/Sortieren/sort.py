@@ -23,9 +23,9 @@ def quicksort(arr):
     
 # Beispiel
 arr = [2, 6, 9, 1, 14, 4, 0, 8, 8, 13]
-print("Unsortierte arrste:", arr)
+print("Unsortierte Liste:", arr)
 sorted_arr = quicksort(arr)
-print("Sortierte arrste:", sorted_arr)
+print("Sortierte Liste:", sorted_arr)
 
 
 #############
